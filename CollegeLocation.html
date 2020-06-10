@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1ffaa8a7bb534dcbba0b3e10f12ff0dc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_1ffaa8a7bb534dcbba0b3e10f12ff0dc" ></div>
+        
+</body>
+<script>    
+    
+            var map_1ffaa8a7bb534dcbba0b3e10f12ff0dc = L.map(
+                "map_1ffaa8a7bb534dcbba0b3e10f12ff0dc",
+                {
+                    center: [21.14, 79.08],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4de555ea7a014f4789f52d87d32141f8 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1ffaa8a7bb534dcbba0b3e10f12ff0dc);
+        
+    
+            var feature_group_7ddea6461c454d859df3b6523b942b11 = L.featureGroup(
+                {}
+            ).addTo(map_1ffaa8a7bb534dcbba0b3e10f12ff0dc);
+        
+    
+            var marker_7590c1e21ad14fdaa1a6cb5de666e38c = L.marker(
+                [26.5123, 80.2329],
+                {}
+            ).addTo(feature_group_7ddea6461c454d859df3b6523b942b11);
+        
+    
+            var icon_828a4182d43e448e92fa3364f61d43d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_7590c1e21ad14fdaa1a6cb5de666e38c.setIcon(icon_828a4182d43e448e92fa3364f61d43d8);
+        
+    
+        var popup_3f510655c1c74d2f8ff7a3c8c13f9e76 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65adf66c2c8143ee9ef6cf541ee4371e = $(`<div id="html_65adf66c2c8143ee9ef6cf541ee4371e" style="width: 100.0%; height: 100.0%;"><h4><b>Name: </b></h4><h4>IIT Kanpur</h4><br><h4><b>City: </b></h4><h4>Kanpur</h4><br><h4><b>Website: </b></h4><a href=https://www.iitk.ac.in/><h4> Click Here</h4></a><br><img src=https://upload.wikimedia.org/wikipedia/commons/d/df/IIT_Kharagpur_Main_Building.JPG height=90 width=150></div>`)[0];
+            popup_3f510655c1c74d2f8ff7a3c8c13f9e76.setContent(html_65adf66c2c8143ee9ef6cf541ee4371e);
+        
+
+        marker_7590c1e21ad14fdaa1a6cb5de666e38c.bindPopup(popup_3f510655c1c74d2f8ff7a3c8c13f9e76)
+        ;
+
+        
+    
+    
+            marker_7590c1e21ad14fdaa1a6cb5de666e38c.bindTooltip(
+                `<div>
+                     IIT Kanpur
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd72f220b6bc4c27aafca0426e1aa357 = L.marker(
+                [28.545, 77.1926],
+                {}
+            ).addTo(feature_group_7ddea6461c454d859df3b6523b942b11);
+        
+    
+            var icon_f131668885ad45bda18236a50d20468f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_cd72f220b6bc4c27aafca0426e1aa357.setIcon(icon_f131668885ad45bda18236a50d20468f);
+        
+    
+        var popup_297e331980a64e8083c977b8691485ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_028dc48e7b6f45388752b8e1c307921c = $(`<div id="html_028dc48e7b6f45388752b8e1c307921c" style="width: 100.0%; height: 100.0%;"><h4><b>Name: </b></h4><h4>IIT Delhi</h4><br><h4><b>City: </b></h4><h4>New Delhi</h4><br><h4><b>Website: </b></h4><a href=http://www.iitd.ac.in/><h4> Click Here</h4></a><br><img src=https://www.businessinsider.in/thumb/msid-70449588,width-600,resizemode-4,imgsize-2452715/education/iit-delhi-and-kharagpur-worst-hit-as-2400-students-drop-out-in-total/iit_delhi_entrance.jpg height=90 width=150></div>`)[0];
+            popup_297e331980a64e8083c977b8691485ab.setContent(html_028dc48e7b6f45388752b8e1c307921c);
+        
+
+        marker_cd72f220b6bc4c27aafca0426e1aa357.bindPopup(popup_297e331980a64e8083c977b8691485ab)
+        ;
+
+        
+    
+    
+            marker_cd72f220b6bc4c27aafca0426e1aa357.bindTooltip(
+                `<div>
+                     IIT Delhi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ecafe0925cf49a3bdbcdab5d1230f57 = L.marker(
+                [22.621, 75.8036],
+                {}
+            ).addTo(feature_group_7ddea6461c454d859df3b6523b942b11);
+        
+    
+            var icon_fb782a58a52147679531073cfa6ebfe6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_5ecafe0925cf49a3bdbcdab5d1230f57.setIcon(icon_fb782a58a52147679531073cfa6ebfe6);
+        
+    
+        var popup_21d0d781ff8649bcb1e3a52f66f56cd3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b6b74a24e144250839bba1723399097 = $(`<div id="html_8b6b74a24e144250839bba1723399097" style="width: 100.0%; height: 100.0%;"><h4><b>Name: </b></h4><h4>Medicaps University</h4><br><h4><b>City: </b></h4><h4>Indore</h4><br><h4><b>Website: </b></h4><a href=http://www.medicaps.ac.in/><h4> Click Here</h4></a><br><img src=https://images.shiksha.com/mediadata/images/1575629515php2dWoIN.jpeg height=90 width=150></div>`)[0];
+            popup_21d0d781ff8649bcb1e3a52f66f56cd3.setContent(html_8b6b74a24e144250839bba1723399097);
+        
+
+        marker_5ecafe0925cf49a3bdbcdab5d1230f57.bindPopup(popup_21d0d781ff8649bcb1e3a52f66f56cd3)
+        ;
+
+        
+    
+    
+            marker_5ecafe0925cf49a3bdbcdab5d1230f57.bindTooltip(
+                `<div>
+                     Medicaps University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee220e9df9c2415c988e1609ddda28b7 = L.marker(
+                [10.7589, 78.8132],
+                {}
+            ).addTo(feature_group_7ddea6461c454d859df3b6523b942b11);
+        
+    
+            var icon_79b528b4835f40299a2b633bfd6db715 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_ee220e9df9c2415c988e1609ddda28b7.setIcon(icon_79b528b4835f40299a2b633bfd6db715);
+        
+    
+        var popup_5bd4bea13d5b4981bc2c63cafeb32c62 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab5a6426a74c47c7b603ce8effcfc047 = $(`<div id="html_ab5a6426a74c47c7b603ce8effcfc047" style="width: 100.0%; height: 100.0%;"><h4><b>Name: </b></h4><h4>NIT Trichy</h4><br><h4><b>City: </b></h4><h4>Truchirappalli</h4><br><h4><b>Website: </b></h4><a href=https://www.nitt.edu/><h4> Click Here</h4></a><br><img src=https://upload.wikimedia.org/wikipedia/commons/a/a1/NIT_Trichy_Clock_tower.jpg height=90 width=150></div>`)[0];
+            popup_5bd4bea13d5b4981bc2c63cafeb32c62.setContent(html_ab5a6426a74c47c7b603ce8effcfc047);
+        
+
+        marker_ee220e9df9c2415c988e1609ddda28b7.bindPopup(popup_5bd4bea13d5b4981bc2c63cafeb32c62)
+        ;
+
+        
+    
+    
+            marker_ee220e9df9c2415c988e1609ddda28b7.bindTooltip(
+                `<div>
+                     NIT Trichy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a4992086c3246f79a60cb079c45c7e9 = L.marker(
+                [19.1334, 72.9133],
+                {}
+            ).addTo(feature_group_7ddea6461c454d859df3b6523b942b11);
+        
+    
+            var icon_8435a1a4481c483f9cfb7f0e53089109 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_2a4992086c3246f79a60cb079c45c7e9.setIcon(icon_8435a1a4481c483f9cfb7f0e53089109);
+        
+    
+        var popup_771452437ac24baf9ac5f46abe537aec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_946d6031a99f4412944c7bc3cd5dcd62 = $(`<div id="html_946d6031a99f4412944c7bc3cd5dcd62" style="width: 100.0%; height: 100.0%;"><h4><b>Name: </b></h4><h4>IIT Bombay</h4><br><h4><b>City: </b></h4><h4>Powai,Mumbai</h4><br><h4><b>Website: </b></h4><a href=http://www.iitb.ac.in/><h4> Click Here</h4></a><br><img src=https://images.shiksha.com/mediadata/images/1507098026phpzkXsFb.jpeg height=90 width=150></div>`)[0];
+            popup_771452437ac24baf9ac5f46abe537aec.setContent(html_946d6031a99f4412944c7bc3cd5dcd62);
+        
+
+        marker_2a4992086c3246f79a60cb079c45c7e9.bindPopup(popup_771452437ac24baf9ac5f46abe537aec)
+        ;
+
+        
+    
+    
+            marker_2a4992086c3246f79a60cb079c45c7e9.bindTooltip(
+                `<div>
+                     IIT Bombay
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a242f343e1d4ae1a844c8b10ded9153 = L.marker(
+                [12.9915, 80.2337],
+                {}
+            ).addTo(feature_group_7ddea6461c454d859df3b6523b942b11);
+        
+    
+            var icon_d882e148fc444312abc3b2937de429a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_7a242f343e1d4ae1a844c8b10ded9153.setIcon(icon_d882e148fc444312abc3b2937de429a1);
+        
+    
+        var popup_7dd8b66a6d95481b8d54174862af3f1f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_77f17bab29a548d6a4085140aab2ab6d = $(`<div id="html_77f17bab29a548d6a4085140aab2ab6d" style="width: 100.0%; height: 100.0%;"><h4><b>Name: </b></h4><h4>IIT Madras</h4><br><h4><b>City: </b></h4><h4>Chennai</h4><br><h4><b>Website: </b></h4><a href=https://www.iitm.ac.in/><h4> Click Here</h4></a><br><img src=https://images.shiksha.com/mediadata/images/1488171142phpcUJ7yi.jpeg height=90 width=150></div>`)[0];
+            popup_7dd8b66a6d95481b8d54174862af3f1f.setContent(html_77f17bab29a548d6a4085140aab2ab6d);
+        
+
+        marker_7a242f343e1d4ae1a844c8b10ded9153.bindPopup(popup_7dd8b66a6d95481b8d54174862af3f1f)
+        ;
+
+        
+    
+    
+            marker_7a242f343e1d4ae1a844c8b10ded9153.bindTooltip(
+                `<div>
+                     IIT Madras
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_000426f356a546d3938f6205c02e0679 = L.marker(
+                [28.3588, 75.58800000000001],
+                {}
+            ).addTo(feature_group_7ddea6461c454d859df3b6523b942b11);
+        
+    
+            var icon_203e58c25364453e87d2fc00dd89ddd9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_000426f356a546d3938f6205c02e0679.setIcon(icon_203e58c25364453e87d2fc00dd89ddd9);
+        
+    
+        var popup_7ec7907706ee437ba20bf20fd363b14b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f01a0eccdc094683a0ecb2506255b1a5 = $(`<div id="html_f01a0eccdc094683a0ecb2506255b1a5" style="width: 100.0%; height: 100.0%;"><h4><b>Name: </b></h4><h4>Bits Pilani</h4><br><h4><b>City: </b></h4><h4>Pilani</h4><br><h4><b>Website: </b></h4><a href=https://www.bits-pilani.ac.in/><h4> Click Here</h4></a><br><img src=https://www.bitsadmission.com/images1/site%20img/31.jpg height=90 width=150></div>`)[0];
+            popup_7ec7907706ee437ba20bf20fd363b14b.setContent(html_f01a0eccdc094683a0ecb2506255b1a5);
+        
+
+        marker_000426f356a546d3938f6205c02e0679.bindPopup(popup_7ec7907706ee437ba20bf20fd363b14b)
+        ;
+
+        
+    
+    
+            marker_000426f356a546d3938f6205c02e0679.bindTooltip(
+                `<div>
+                     Bits Pilani
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9db7928b4c9d4fdfbdcc608156f3b542 = L.marker(
+                [26.1878, 91.6916],
+                {}
+            ).addTo(feature_group_7ddea6461c454d859df3b6523b942b11);
+        
+    
+            var icon_ee1c418cfe4f423280923cf5fdf6efae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_9db7928b4c9d4fdfbdcc608156f3b542.setIcon(icon_ee1c418cfe4f423280923cf5fdf6efae);
+        
+    
+        var popup_59daabee6e904299bea98d8f0d7377a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac928b74c35f4048b1e43a74b53798f0 = $(`<div id="html_ac928b74c35f4048b1e43a74b53798f0" style="width: 100.0%; height: 100.0%;"><h4><b>Name: </b></h4><h4>IIT Guwahati</h4><br><h4><b>City: </b></h4><h4>Guwahati</h4><br><h4><b>Website: </b></h4><a href=http://www.iitg.ac.in/><h4> Click Here</h4></a><br><img src=https://images.static-collegedunia.com/public/college_data/images/appImage/25396_IIT_New.jpg height=90 width=150></div>`)[0];
+            popup_59daabee6e904299bea98d8f0d7377a9.setContent(html_ac928b74c35f4048b1e43a74b53798f0);
+        
+
+        marker_9db7928b4c9d4fdfbdcc608156f3b542.bindPopup(popup_59daabee6e904299bea98d8f0d7377a9)
+        ;
+
+        
+    
+    
+            marker_9db7928b4c9d4fdfbdcc608156f3b542.bindTooltip(
+                `<div>
+                     IIT Guwahati
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f205a117e0cb402d865f70b4fff0a284 = L.marker(
+                [20.1439, 85.6762],
+                {}
+            ).addTo(feature_group_7ddea6461c454d859df3b6523b942b11);
+        
+    
+            var icon_4894ba32ef6046eab581b5000432ec54 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_f205a117e0cb402d865f70b4fff0a284.setIcon(icon_4894ba32ef6046eab581b5000432ec54);
+        
+    
+        var popup_625c75cf64014a7f88dd52d57e0ada2f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7f903a66717146288359f8f91473f481 = $(`<div id="html_7f903a66717146288359f8f91473f481" style="width: 100.0%; height: 100.0%;"><h4><b>Name: </b></h4><h4>IIT Bhubaneswar</h4><br><h4><b>City: </b></h4><h4>Bhubaneswar</h4><br><h4><b>Website: </b></h4><a href=https://www.iitbbs.ac.in/><h4> Click Here</h4></a><br><img src=https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Master_Plan_of_IIT_Bhubaneswar_Main_Building.jpg/440px-Master_Plan_of_IIT_Bhubaneswar_Main_Building.jpg height=90 width=150></div>`)[0];
+            popup_625c75cf64014a7f88dd52d57e0ada2f.setContent(html_7f903a66717146288359f8f91473f481);
+        
+
+        marker_f205a117e0cb402d865f70b4fff0a284.bindPopup(popup_625c75cf64014a7f88dd52d57e0ada2f)
+        ;
+
+        
+    
+    
+            marker_f205a117e0cb402d865f70b4fff0a284.bindTooltip(
+                `<div>
+                     IIT Bhubaneswar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e2729d23035d4285a6a722e5ad19ec1e = L.marker(
+                [23.8144, 86.4412],
+                {}
+            ).addTo(feature_group_7ddea6461c454d859df3b6523b942b11);
+        
+    
+            var icon_cfb31ef4bb374d408b47c877a1abb8f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_e2729d23035d4285a6a722e5ad19ec1e.setIcon(icon_cfb31ef4bb374d408b47c877a1abb8f3);
+        
+    
+        var popup_c049148f0a8248ada17b56f7e246aebe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3131de01b2bd4ceea2da1191bfcbec8b = $(`<div id="html_3131de01b2bd4ceea2da1191bfcbec8b" style="width: 100.0%; height: 100.0%;"><h4><b>Name: </b></h4><h4>ISM Dhanbad</h4><br><h4><b>City: </b></h4><h4>Dhanbad</h4><br><h4><b>Website: </b></h4><a href=https://www.iitism.ac.in/><h4> Click Here</h4></a><br><img src=https://new-img.patrika.com/upload/images/2016/05/26/ISM-dhanbad-1464239659_835x547.jpg height=90 width=150></div>`)[0];
+            popup_c049148f0a8248ada17b56f7e246aebe.setContent(html_3131de01b2bd4ceea2da1191bfcbec8b);
+        
+
+        marker_e2729d23035d4285a6a722e5ad19ec1e.bindPopup(popup_c049148f0a8248ada17b56f7e246aebe)
+        ;
+
+        
+    
+    
+            marker_e2729d23035d4285a6a722e5ad19ec1e.bindTooltip(
+                `<div>
+                     ISM Dhanbad
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
